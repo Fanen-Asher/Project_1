@@ -30,14 +30,14 @@
 
 #Install MySQL
 
-`sudo apt install mysql-server`
+`sudo apt install mysql`
 ![Mysql Installation](./MyImage/install_MySQL.PNG)
 
 #logon to Mysql
 #ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 
 `sudo mysql`
-![Mysql Installation](./logon_mysql.PNG)
+![Mysql Installation](./MyImage/logon_mysql.PNG)
 
 #Interactive script to setup MySQL
 
