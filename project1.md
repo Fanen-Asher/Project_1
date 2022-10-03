@@ -3,35 +3,35 @@
 #Update packages in package manager
 
 `sudo apt update`
-![package manager update](./package_update.PNG)
+![package manager update](./MyImage/package_update.PNG)
 
 #Step 1 - Apache Setup
 #run apache2 package installation
 
 `sudo apt install apache2`
-![Install Apache2 package](./install_Apache2.PNG)
+![Install Apache2 package](./MyImage/install_Apache2.PNG)
 
 #check if Apache service is running
 
 `sudo systemctl status apache2`
-![Apache service running](./Apache_service_running.PNG)
+![Apache service running](./MyImage/Apache_service_running.PNG)
 
 #check the html scrip to confirm apache is setup
 
 `curl http://localhost:80`
-![Apache local access](./check_Apache_local.PNG)
+![Apache local access](./MyImage/check_Apache_local.PNG)
 
 #access Apache from Browser by replacing public ip with public ip from the EC2 Instance
 
 `http://<Public-IP-Address>:80`
-![Access Apache from browser](./ubuntu_Apache.PNG)
+![Access Apache from browser](./MyImage/ubuntu_Apache.PNG)
 
 #STEP 2 - Mysql Setup
 
 #Install MySQL
 
 `sudo apt install mysql-server`
-![Mysql Installation](./install_MySQL.PNG)
+![Mysql Installation](./MyImage/install_MySQL.PNG)
 
 #logon to Mysql
 #ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
@@ -42,12 +42,12 @@
 #Interactive script to setup MySQL
 
 `sudo mysql_secure_installation`
-![Setting up mysql user password](./interactive_Script_MySQL.PNG)
+![Setting up mysql user password](./MyImage/interactive_Script_MySQL.PNG)
 
 #Test MySQL logon
 
 `sudo mysql -p`
-![testing MySQL logon](./Test_MySQL_Logon.PNG)
+![testing MySQL logon](./MyImage/Test_MySQL_Logon.PNG)
 
 #then exit MySQL.
 
@@ -57,12 +57,12 @@
 
 `sudo apt install php libapache2-mod-php php-mysql`
 
-![install Php and connection packages to MySQL and ApacheServer](./php_mySQL_Apache_Connect.PNG)
+![install Php and connection packages to MySQL and ApacheServer](./MyImage/php_mySQL_Apache_Connect.PNG)
 
 #php_version
 
 `php -v`
-![check php version](./php_version.PNG)
+![check php version](./MyImage/php_version.PNG)
 
 #STEP -4: Creating a virtual host for your website using Apache
 
@@ -80,7 +80,7 @@
 
 `sudo vi /etc/apache2/sites-available/projectlamp.conf`
 
-![check php version](./conf_file_Apache.PNG)
+![check php version](./MyImage/conf_file_Apache.PNG)
 
 #confirm file is created
 
@@ -104,7 +104,7 @@
 
 `sudo systemctl reload apache2`
 
-![virtualhost website](./Virtual_Host_Website.PNG)
+![virtualhost website](./MyImage/Virtual_Host_Website.PNG)
 
 #change priority of index.html and index.php file to make index.php file come first
 
@@ -122,7 +122,7 @@
 phpinfo();
 
 
-![php rendered webpage](./php_rendered.PNG)
+![php rendered webpage](./MyImage/php_rendered.PNG)
 
 remove php file for security
 
