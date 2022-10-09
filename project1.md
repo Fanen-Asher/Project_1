@@ -118,8 +118,7 @@
 
 `vim /var/www/projectlamp/index.php`
 
-`<?php
-phpinfo();`
+# <?php phpinfo();
 
 
 ![php rendered webpage](./MyImage/php_rendered.PNG)
